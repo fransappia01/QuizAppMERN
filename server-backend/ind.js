@@ -19,7 +19,7 @@ db.mongoose
 
 
 // simple route
-app.get("/hola", (req, res) => {
+app.get("/", (req, res) => {
   res.json({ message: "hola franchu" });
 });
 
