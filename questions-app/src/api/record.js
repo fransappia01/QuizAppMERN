@@ -1,4 +1,4 @@
-const backendURL = 'http://localhost:8080';
+const backendURL = 'https://quiz-app-mern-back.vercel.app/';
 
 const headers = new Headers();
 headers.append('Content-Type', 'application/json');
