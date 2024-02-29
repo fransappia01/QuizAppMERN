@@ -20,7 +20,7 @@ db.mongoose
 
 // simple route
 app.get("/", (req, res) => {
-  res.json({ message: "hola franchu" });
+  res.send('Hello World!');
 });
 
 // set port, listen for requests
