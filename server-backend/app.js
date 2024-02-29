@@ -8,7 +8,7 @@ const app = express();
 
 app.use(cors(
   {
-    origin: ['https://deploy-mern.vercel.app'],
+    origin: ['https://quiz-app-mern-back.vercel.app'],
     methods: ['POST', 'GET'],
     credentials: true
   }
