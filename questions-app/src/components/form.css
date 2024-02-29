@@ -14,7 +14,7 @@
   }
   
   /* Reglas de estilo adicionales para dispositivos móviles */
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 700px) {
     .form-modal {
       max-width: 70%; /* Cambia el ancho máximo del modal para dispositivos móviles */
       width: 70%; /* Cambia el ancho predeterminado para dispositivos móviles */

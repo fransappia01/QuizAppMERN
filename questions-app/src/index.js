@@ -5,7 +5,7 @@ import { QueryClient, QueryClientProvider } from 'react-query';
 import './index.css';
 import Form from './components/form';
 import GameApp from './components/GameApp';
-import RecordList from './components/HistoryAnswers';
+import Icon from'./fondo2.jpg'
 
 
 const queryClient = new QueryClient();
@@ -17,18 +17,22 @@ const App = () => {
     formSubmitted: false
   });
 
+  const [showBackgroundImage, setShowBackgroundImage] = useState(true);
+
   const handleStartGame = (nombre) => {
     setNombreUsuario(nombre);
     setGameState({
       gameStarted: true,
       formSubmitted: true
     });
+    setShowBackgroundImage(false);
     console.log(`El nombre del participante es: ${nombre}`);
   };
 
 
   return (
     <div>
+      {showBackgroundImage && <img src={Icon} className="background-image" />}
       {!gameState.gameStarted && !gameState.formSubmitted && <Form onSubmit={handleStartGame} />}
       {gameState.gameStarted &&  <GameApp nombreUsuario={nombreUsuario}/> }
 
