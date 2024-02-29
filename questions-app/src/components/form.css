@@ -1,0 +1,62 @@
+
+.form-modal {
+    background-color: #a4b6ca;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 100px 180px;
+    border: 2px solid black;
+    border-radius: 10px;
+    max-width: 80%; /* Establece el ancho máximo del modal */
+    width: 300px; /* Establece un ancho predeterminado para pantallas más pequeñas */
+    text-align: center;
+  }
+  
+  /* Reglas de estilo adicionales para dispositivos móviles */
+  @media only screen and (max-width: 600px) {
+    .form-modal {
+      max-width: 70%; /* Cambia el ancho máximo del modal para dispositivos móviles */
+      width: 70%; /* Cambia el ancho predeterminado para dispositivos móviles */
+      padding: 15px; /* Ajusta el relleno para dispositivos móviles */
+      font-size: 14px; /* Ajusta el tamaño de fuente para dispositivos móviles */
+      background-color: rgb(198, 221, 255);
+    }
+  }
+  
+  .form-modal label {
+    margin-bottom: 20px;
+    text-align: center;
+    display: block;
+    font-size: 16px;
+  }
+  
+  .form-modal input {
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 80%;
+    font-size: 16px;
+  }
+  
+  .form-modal button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 50%;
+    margin: 0 auto;
+
+  }
+  
+  .form-modal button:hover {
+    background-color: #0056b3;
+  }
+    
+  /* Deshabilitar el zoom al hacer foco en campos de entrada */
+  .form-modal input:focus{
+    font-size: 16px; /* Mantén el tamaño de la fuente cuando el campo de entrada tiene foco */
+  }
+  

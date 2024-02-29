@@ -1,0 +1,84 @@
+
+.record-list{
+    text-align: center;
+    font-size: 20px;
+    
+}
+
+.centered-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+    margin-top: 60px;
+    
+  }
+
+  /* Estilos para la tabla */
+.record-list table {
+    width: 80%; /* Reduce el ancho de la tabla */
+    margin: auto; /* Centra la tabla horizontalmente */
+    border-collapse: collapse;
+    border-radius: 10px; /* Redondea las cuatro esquinas de la tabla */
+    overflow: hidden; 
+    margin-bottom: 50px;
+  }
+  
+  /* Estilos para las celdas de la tabla */
+  .record-list th, .record-list td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #ddd; /* Separador entre filas */
+    border-right: 1px solid #ddd; /* Separador entre columnas */
+    border-left: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+  }
+  
+  /* Estilos para la cabecera de la tabla */
+  .record-list th {
+    background-color: #dcdff3; /* Color de fondo */
+    color: #252525; /* Color del texto */
+  }
+  
+  /* Estilos para las filas impares de la tabla */
+  .record-list tr:nth-child(odd) {
+    background-color: #f9f9f9; /* Color de fondo alternativo */
+  }
+  
+  /* Estilos para las filas pares de la tabla */
+  .record-list tr:nth-child(even) {
+    background-color: #fff; /* Color de fondo alternativo */
+  }
+
+  .record-list th:nth-child(1),
+  .record-list td:nth-child(1) {
+      width: 30%; /* Ancho para la primera columna */
+  }
+  
+  .record-list th:nth-child(2),
+  .record-list td:nth-child(2) {
+      width: 30%; /* Ancho para la segunda columna */
+  }
+  
+  .record-list th:nth-child(3),
+  .record-list td:nth-child(3) {
+      width: 30%; /* Ancho para la tercera columna */
+  }
+
+
+  
+  /* Estilos para cuando el cursor pasa sobre una fila */
+  .record-list tr:hover {
+    background-color: #f5f5f5; /* Color de fondo al pasar el cursor */
+  }
+  
+  .record-list .user-row {
+    font-weight: bold; /* Opcional: establece el texto en negrita para resaltar */
+    background-color: rgb(167, 241, 160) !important;
+}
+
+.boton{
+    border-radius: 5px;
+    width: 15%;
+}
+

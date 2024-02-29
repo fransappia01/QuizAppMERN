@@ -1,0 +1,9 @@
+.option-button:active {
+    background-color: #a4b6ca; /* Cambia el color de fondo cuando se toca */
+  }
+
+  @media only screen and (max-width: 600px) {
+    .option-button:active{
+      background-color: rgb(198, 221, 255);
+    }
+  }
