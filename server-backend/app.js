@@ -6,7 +6,13 @@ const controller = require('./controllers/controller');
 
 const app = express();
 
-app.use(cors());
+app.use(cors(
+  {
+    origin: ['https://quiz-app-mern-front.vercel.app/'],
+    methods: ['POST', 'GET'],
+    credentials: true
+  }
+));
 
 // parse requests of content-type - application/json
 app.use(bodyParser.json());
