@@ -1,6 +1,6 @@
-// Importar el modelo de puntuación
-const Record = require('../models/model');
 const express = require("express");
+const router = express.Router();
+const Record = require('../models/model');
 
 // Función para enviar una nueva puntuación
 exports.postResults = async (req, res) => {
@@ -19,21 +19,17 @@ exports.postResults = async (req, res) => {
 
 // Función para obtener todas las puntuaciones
 exports.getResults = async (req, res) => {
-    try {
-      // Usa el modelo de registro para buscar todos los registros en la base de datos
-      const puntuaciones = await Record.find()
-      res.json(puntuaciones);
-      console.log(puntuaciones, "points")
-    } catch (error) {
-      console.error('Error al obtener las puntuaciones:', error);
-      res.status(500).json({ error: 'Error interno del servidor' });
-    }
-  };
+  try {
+    // Obtener todas las puntuaciones de la base de datos
+    const puntuaciones = await Record.find();
+    res.json(puntuaciones);
+    console.log(puntuaciones, "points")
+  } catch (error) {
+    console.error('Error al obtener las puntuaciones:', error);
+    res.status(500).json({ error: 'Error interno del servidor' });
+  }
+};
 
-
-const router = express.Router();
-
-// Importar las funciones del controlador
 const { postResults, getResults } = require('./controller');
 
 // Ruta para enviar una nueva puntuación
