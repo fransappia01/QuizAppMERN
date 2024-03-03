@@ -3,7 +3,7 @@ headers.append('Content-Type', 'application/json');
 headers.append('Access-Control-Allow-Origin', '*');
 
 const getRecords = async () => {
-  const res = await fetch(`https://quiz-app-mern-back.vercel.app/api/allresults`, {
+  const res = await fetch(`http://localhost:8080/api/allresults`, {
     method: 'GET',
     headers: headers,
   });
@@ -13,7 +13,7 @@ const getRecords = async () => {
 };
 
 const postRecord = async ({ nombre, puntuacion }) => {
-  const res = await fetch(`https://quiz-app-mern-back.vercel.app/api/result`, {
+  const res = await fetch(`http://localhost:8080/api/resultado`, {
     method: 'POST',
     headers: headers,
     body: JSON.stringify({ nombre, puntuacion }),

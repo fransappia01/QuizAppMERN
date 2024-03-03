@@ -31,13 +31,16 @@ exports.getResults = async (req, res) => {
   };
 
 
+  //routes
+
+  
 const router = express.Router();
 
 // Importar las funciones del controlador
 const { postResults, getResults } = require('./controller');
 
 // Ruta para enviar una nueva puntuación
-router.post('/result', postResults);
+router.post('/resultado', postResults);
 
 // Ruta para obtener todas las puntuaciones
 router.get('/allresults', getResults);
