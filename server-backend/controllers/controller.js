@@ -1,5 +1,4 @@
 const express = require("express");
-const router = express.Router();
 const Record = require('../models/model');
 
 // Función para enviar una nueva puntuación
@@ -30,10 +29,17 @@ exports.getResults = async (req, res) => {
   }
 };
 
-const { postResults, getResults } = require('./controller');
+
+  //routes
+
+  
+const router = express.Router();
+
+// Importar las funciones del controlador
+const { postResults, getResults } = require('../controllers/controller');
 
 // Ruta para enviar una nueva puntuación
-router.post('/result', postResults);
+router.post('/resultado', postResults);
 
 // Ruta para obtener todas las puntuaciones
 router.get('/allresults', getResults);

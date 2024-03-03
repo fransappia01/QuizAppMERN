@@ -21,7 +21,7 @@
     border-collapse: collapse;
     border-radius: 10px; /* Redondea las cuatro esquinas de la tabla */
     overflow: hidden; 
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
   
   /* Estilos para las celdas de la tabla */
@@ -80,5 +80,6 @@
 .boton{
     border-radius: 5px;
     width: 15%;
+    margin-bottom: 25px;
 }
 
