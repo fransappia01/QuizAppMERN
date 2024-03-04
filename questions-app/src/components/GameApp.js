@@ -36,7 +36,38 @@ const GameApp = ({ nombreUsuario }) => {
       pregunta: '¿Cuál es el metal más abundante en la corteza terrestre?',
       opciones: ['Hierro', 'Aluminio', 'Cobre', 'Oro'],
       respuestaCorrecta: 'Aluminio'
+    },
+    {
+      id: 6,
+      pregunta: '¿Cuál es el país más grande del mundo por área?',
+      opciones: ['Rusia', 'Canadá', 'China', 'Estados Unidos'],
+      respuestaCorrecta: 'Rusia'
+    },
+    {
+      id: 7,
+      pregunta: '¿Cuál es el océano más grande del mundo?',
+      opciones: ['Océano Pacífico', 'Océano Atlántico', 'Océano Índico', 'Océano Antártico'],
+      respuestaCorrecta: 'Océano Pacífico'
+    },
+    {
+      id: 8,
+      pregunta: '¿Quién pintó la Mona Lisa?',
+      opciones: ['Leonardo da Vinci', 'Pablo Picasso', 'Vincent van Gogh', 'Claude Monet'],
+      respuestaCorrecta: 'Leonardo da Vinci'
+    },
+    {
+      id: 9,
+      pregunta: '¿Cuál es el planeta más grande del sistema solar?',
+      opciones: ['Júpiter', 'Saturno', 'Neptuno', 'Urano'],
+      respuestaCorrecta: 'Júpiter'
+    },
+    {
+      id: 10,
+      pregunta: '¿Cuál es la montaña más alta del mundo?',
+      opciones: ['Monte Everest', 'Mont Blanc', 'K2', 'Aconcagua'],
+      respuestaCorrecta: 'Monte Everest'
     }
+    
   ];
 
   const [preguntaActual, setPreguntaActual] = useState(0);
