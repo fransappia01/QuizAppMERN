@@ -2,7 +2,7 @@
 .record-list{
     text-align: center;
     font-size: 20px;
-    
+    margin-top: 80px;
 }
 
 .centered-container {
@@ -10,7 +10,7 @@
     justify-content: center;
     align-items: center;
     height: 100%; 
-    margin-top: 60px;
+    margin-top: 50px;
     
   }
 
@@ -36,8 +36,8 @@
   
   /* Estilos para la cabecera de la tabla */
   .record-list th {
-    background-color: #dcdff3; /* Color de fondo */
-    color: #252525; /* Color del texto */
+    background-color: #a4b6ca; /* Color de fondo */
+    color: #000000; /* Color del texto */
   }
   
   /* Estilos para las filas impares de la tabla */

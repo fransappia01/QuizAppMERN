@@ -111,7 +111,7 @@ const GameApp = ({ nombreUsuario }) => {
       <Flex align="center" justify="center" direction="column" mt={10}>
         {preguntaActual < preguntas.length && (
           <>
-            <Heading as="h2" size="lg" mb={4}>
+            <Heading as="h2" size="lg" mb={20}>
               Pregunta {preguntaActual + 1}
             </Heading>
             <Question

@@ -30,7 +30,7 @@ const ResultsModal = ({ mostrarModal, respuestasCorrectas, onClose, nombreUsuari
                     <Modal className="modal" isOpen={true} onClose={onClose} >
                         <ModalOverlay />
                         <ModalContent className="results-modal">
-                        <Heading as="h1" size="md">
+                        <Heading as="h1" size="md" >
                             Resultados
                         </Heading>
                             <ModalBody>
@@ -40,6 +40,7 @@ const ResultsModal = ({ mostrarModal, respuestasCorrectas, onClose, nombreUsuari
                                 <Button type="submit" className="boton" colorScheme="blue" onClick={handleCerrarModal}>Cerrar</Button>
                             </ModalFooter>
                         </ModalContent>
+                        <div className="semicircle"></div>
                     </Modal>
                 </div>
             )}

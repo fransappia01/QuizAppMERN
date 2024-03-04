@@ -5,7 +5,7 @@ import './Question.css'
 const Question = ({ pregunta, opciones, onRespuesta }) => {
   return (
     <Box>
-      <Text fontSize="xl" mb={4} textAlign="center">
+      <Text fontSize="xl" mb={30} textAlign="center">
         {pregunta}
       </Text>
       <Flex direction="column" align="center">
@@ -15,10 +15,10 @@ const Question = ({ pregunta, opciones, onRespuesta }) => {
             colorScheme="blue"
             size="lg"
             width="48%"
-            borderRadius="5px"
+            borderRadius="8px"
             cursor="pointer"
-            px = {60}
-            py = {40}
+            px = {140}
+            py = {80}
             marginTop={15}
             marginBottom={15}
             onClick={() => onRespuesta(opciones[0])}
@@ -33,8 +33,8 @@ const Question = ({ pregunta, opciones, onRespuesta }) => {
             width="48%"
             borderRadius="5px"
             cursor="pointer"
-            px = {60}
-            py = {40}
+            px = {140}
+            py = {80}
             marginTop={15}
             marginBottom={15}
             onClick={() => onRespuesta(opciones[1])}
@@ -51,8 +51,8 @@ const Question = ({ pregunta, opciones, onRespuesta }) => {
             width="48%"
             borderRadius="5px"
             cursor="pointer"
-            px = {60}
-            py = {40}
+            px = {140}
+            py = {80}
             onClick={() => onRespuesta(opciones[2])}
             className="option-button"
           >
@@ -65,8 +65,8 @@ const Question = ({ pregunta, opciones, onRespuesta }) => {
             width="48%"
             borderRadius="5px"
             cursor="pointer"
-            px = {60}
-            py = {40}
+            px = {140}
+            py = {80}
             onClick={() => onRespuesta(opciones[3])}
             className="option-button"
           >
@@ -74,6 +74,7 @@ const Question = ({ pregunta, opciones, onRespuesta }) => {
           </Button>
         </Flex>
       </Flex>
+      <div className="semicircle"></div>
     </Box>
   );
 };

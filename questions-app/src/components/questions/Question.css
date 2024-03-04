@@ -2,6 +2,22 @@
     background-color: #a4b6ca; /* Cambia el color de fondo cuando se toca */
   }
 
+.option-button :hover{
+  cursor: pointer;
+  background-color: lightblue;
+}
+
+.semicircle {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 200px;
+  height: 200px;
+  background-color: #a4b6ca;
+  border-top-left-radius: 100%; /* Hace que solo la esquina inferior derecha sea redondeada */
+}
+
+
   @media only screen and (max-width: 600px) {
     .option-button:active{
       background-color: rgb(198, 221, 255);
