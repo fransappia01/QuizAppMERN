@@ -1,6 +1,6 @@
 
 .form-modal {
-    background-color: #a4b6ca;
+    background-color: #d9d9e0;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -11,6 +11,7 @@
     max-width: 80%; /* Establece el ancho máximo del modal */
     width: 300px; /* Establece un ancho predeterminado para pantallas más pequeñas */
     text-align: center;
+    margin-top: 30px;
   }
   
   /* Reglas de estilo adicionales para dispositivos móviles */
@@ -41,7 +42,7 @@
   
   .form-modal button {
     padding: 10px;
-    background-color: #007bff;
+    background-color: #000000;
     color: white;
     border: none;
     border-radius: 5px;
@@ -58,5 +59,36 @@
   /* Deshabilitar el zoom al hacer foco en campos de entrada */
   .form-modal input:focus{
     font-size: 16px; /* Mantén el tamaño de la fuente cuando el campo de entrada tiene foco */
+  }
+  
+  .form-container {
+    position: relative;
+  }
+  
+  /* Estilos para el fondo detrás del modal */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #4C75DA;
+    z-index: -1; /* Asegura que el fondo esté detrás del modal */
+  }
+
+  .input-form{
+    border-radius: 2px;
+    border-width: 2px;
+  }
+
+  .navbar {
+    position: fixed; /* Fija la posición del rectángulo */
+    top: 0; /* Coloca el rectángulo en la parte superior */
+    left: 0; /* Alinea el rectángulo a la izquierda */
+    width: 100%; /* Hace que el rectángulo ocupe todo el ancho */
+    height: 100px; /* Altura del rectángulo */
+    background-color: #050505; /* Color de fondo del rectángulo */
+    z-index: 1000; /* Asegura que el rectángulo esté encima de otros elementos */
+
   }
   

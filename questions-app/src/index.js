@@ -32,7 +32,7 @@ const App = () => {
 
   return (
     <div>
-      {showBackgroundImage && <img src={Icon} className="background-image" />}
+      {!gameState.gameStarted && <div className='title'>Quiz App</div>}
       {!gameState.gameStarted && !gameState.formSubmitted && <Form onSubmit={handleStartGame} />}
       {gameState.gameStarted &&  <GameApp nombreUsuario={nombreUsuario}/> }
 

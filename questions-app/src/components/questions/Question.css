@@ -1,5 +1,5 @@
 .option-button:active {
-    background-color: #a4b6ca; /* Cambia el color de fondo cuando se toca */
+    background-color: #7DA7D5; /* Cambia el color de fondo cuando se toca */
   }
 
 .option-button :hover{
@@ -13,7 +13,7 @@
   right: 0;
   width: 200px;
   height: 200px;
-  background-color: #a4b6ca;
+  background-color: #7DA7D5;
   border-top-left-radius: 100%; /* Hace que solo la esquina inferior derecha sea redondeada */
 }
 

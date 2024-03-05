@@ -21,23 +21,29 @@ const Form = ({ onSubmit }) => {
   };
 
   return (
-    <Modal
-      isOpen={!submitted}
-      ariaHideApp={false}
-      className="form-modal"
-    >
-      <form onSubmit={handleFormSubmit}>
-        <label>
-          Ingresa tu nombre:
-          <input
-            type="text"
-            value={nombre}
-            onChange={handleInputChange}
-          />
-        </label>
-        <button type="submit">Comenzar</button>
-      </form>
-    </Modal>
+    <div className="form-container"> 
+    <div className="navbar"></div>
+      <div className="overlay"></div> 
+      <Modal
+        isOpen={!submitted}
+        ariaHideApp={false}
+        className="form-modal"
+        overlayClassName="overlay" 
+      >
+        <form onSubmit={handleFormSubmit}>
+          <label>
+            Ingresa tu nombre:
+            <input
+              className='input-form'
+              type="text"
+              value={nombre}
+              onChange={handleInputChange}
+            />
+          </label>
+          <button type="submit">Comenzar</button>
+        </form>
+      </Modal>
+    </div>
   );
 };
 

@@ -16,4 +16,20 @@ code {
   width: 100%;
   height: 100vh;
   position: fixed;
+  background-color: #007bff;
 }  
+
+
+.title {
+  position: relative;
+  font-size: 45px; /* Tamaño de fuente normal */
+  color: rgb(255, 255, 255); /* Color del texto */
+  font-weight: bold; /* Texto en negrita */
+  text-align: center; /* Centrar el texto */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  letter-spacing: 7px;
+  margin-top: 20px;
+  z-index: 2000;
+}

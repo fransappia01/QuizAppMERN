@@ -17,8 +17,8 @@ const Question = ({ pregunta, opciones, onRespuesta }) => {
             width="48%"
             borderRadius="8px"
             cursor="pointer"
-            px = {140}
-            py = {80}
+            px = {120}
+            py = {75}
             marginTop={15}
             marginBottom={15}
             onClick={() => onRespuesta(opciones[0])}
@@ -33,8 +33,8 @@ const Question = ({ pregunta, opciones, onRespuesta }) => {
             width="48%"
             borderRadius="5px"
             cursor="pointer"
-            px = {140}
-            py = {80}
+            px = {120}
+            py = {75}
             marginTop={15}
             marginBottom={15}
             onClick={() => onRespuesta(opciones[1])}
@@ -51,10 +51,12 @@ const Question = ({ pregunta, opciones, onRespuesta }) => {
             width="48%"
             borderRadius="5px"
             cursor="pointer"
-            px = {140}
-            py = {80}
+            px = {120}
+            py = {75}
             onClick={() => onRespuesta(opciones[2])}
+            marginBottom={30}
             className="option-button"
+            
           >
             {opciones[2]}
           </Button>
@@ -65,9 +67,10 @@ const Question = ({ pregunta, opciones, onRespuesta }) => {
             width="48%"
             borderRadius="5px"
             cursor="pointer"
-            px = {140}
-            py = {80}
+            px = {120}
+            py = {75}
             onClick={() => onRespuesta(opciones[3])}
+            marginBottom={30}
             className="option-button"
           >
             {opciones[3]}

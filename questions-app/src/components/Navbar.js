@@ -4,7 +4,7 @@ import icon from '../icon.png';
 
 const Navbar = ({ nombreUsuario }) => {
 
-    const bgColor = window.innerWidth < 768 ? 'rgb(198, 221, 255)' : '#a4b6ca'; //defino colores para PC y celu distintos porque cambian
+    const bgColor = window.innerWidth < 768 ? 'rgb(198, 221, 255)' : '#4C75DA'; //defino colores para PC y celu distintos porque cambian
 
   return (
     <Flex
