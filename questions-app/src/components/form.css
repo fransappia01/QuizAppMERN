@@ -73,7 +73,7 @@
     width: 100%;
     height: 100%;
     /*background-color: #4C75DA;*/
-    background-image: url('../preguntas.jpg');
+    background-image: url('../preguntas-min.jpg');
     background-size: cover;
     z-index: -1; /* Asegura que el fondo esté detrás del modal */
   }
