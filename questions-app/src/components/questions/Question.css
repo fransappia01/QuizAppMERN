@@ -7,13 +7,14 @@
   background-color: lightblue;
 }
 
-.semicircle {
+.semicircles {
   position: fixed;
   bottom: 0;
   right: 0;
   width: 200px;
   height: 200px;
   background-color: #7DA7D5;
+  opacity: 0.8;
   border-top-left-radius: 100%; /* Hace que solo la esquina inferior derecha sea redondeada */
 }
 

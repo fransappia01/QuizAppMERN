@@ -5,9 +5,9 @@ const Record = require('../models/model');
 exports.postResults = async (req, res) => {
   try {
     // Validar que se proporcionen nombre y puntuación en el cuerpo de la solicitud
-    if (!req.body.nombre || !req.body.puntuacion) {
-      return res.status(400).json({ error: 'Debes proporcionar un nombre y una puntuación' });
-    }
+    //if (!req.body.nombre || !req.body.puntuacion) {
+    //  return res.status(400).json({ error: 'Debes proporcionar un nombre y una puntuación' });
+    //}
 
     const { nombre, puntuacion } = req.body;
     // Crear una nueva instancia del modelo de puntuación con los datos recibidos

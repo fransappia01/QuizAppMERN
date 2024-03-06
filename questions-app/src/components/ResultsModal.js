@@ -18,7 +18,8 @@ const ResultsModal = ({ mostrarModal, respuestasCorrectas, onClose, nombreUsuari
                 nombre: nombreUsuario, // Nombre del usuario 
                 puntuacion: respuestasCorrectas // Puntuación del usuario
             });
-            console.log('Puntuación guardada correctamente', nombreUsuario);
+            console.log('Nombre guardado correctamente', nombreUsuario);
+            console.log('Puntuación guardada correctamente', respuestasCorrectas);
         } catch (error) {
             console.error('Error al guardar la puntuación:', error);
         }
@@ -29,12 +30,17 @@ const ResultsModal = ({ mostrarModal, respuestasCorrectas, onClose, nombreUsuari
                 <div className="modal-backdrop">
                     <Modal className="modal" isOpen={true} onClose={onClose} >
                         <ModalOverlay />
-                        <ModalContent className="results-modal">
-                        <Heading as="h1" size="md" >
+                        <ModalContent className="results-modal" >
+                        <Heading as="h1" size="md" className='resultados'>
                             Resultados
                         </Heading>
                             <ModalBody>
-                                <p className="answers">Respuestas correctas: {respuestasCorrectas}</p>
+                            <div className="answers">
+                               <p>Respuestas correctas:ㅤ</p>
+                               <div className="circle">
+                                <span className='number'>{respuestasCorrectas}</span>
+                                </div>
+                            </div>
                             </ModalBody>
                             <ModalFooter>
                                 <Button type="submit" className="boton" colorScheme="blue" onClick={handleCerrarModal}>Cerrar</Button>

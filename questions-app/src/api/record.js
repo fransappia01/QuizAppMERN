@@ -19,7 +19,7 @@ const postRecord = async ({ nombre, puntuacion }) => {
     body: JSON.stringify({ nombre, puntuacion }),
   });
   const record = await res.json();
-  console.log(record);
+  console.log(record, "vevoooo");
   return record;
 };
 

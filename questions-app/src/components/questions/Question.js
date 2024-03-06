@@ -77,7 +77,7 @@ const Question = ({ pregunta, opciones, onRespuesta }) => {
           </Button>
         </Flex>
       </Flex>
-      <div className="semicircle"></div>
+      <div className="semicircles"></div>
     </Box>
   );
 };

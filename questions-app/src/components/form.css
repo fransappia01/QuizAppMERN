@@ -42,7 +42,7 @@
   
   .form-modal button {
     padding: 10px;
-    background-color: #000000;
+    background-color: #1755f1;
     color: white;
     border: none;
     border-radius: 5px;
@@ -72,7 +72,9 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #4C75DA;
+    /*background-color: #4C75DA;*/
+    background-image: url('../preguntas.jpg');
+    background-size: cover;
     z-index: -1; /* Asegura que el fondo esté detrás del modal */
   }
 
@@ -88,6 +90,7 @@
     width: 100%; /* Hace que el rectángulo ocupe todo el ancho */
     height: 100px; /* Altura del rectángulo */
     background-color: #050505; /* Color de fondo del rectángulo */
+    opacity: 0.98;
     z-index: 1000; /* Asegura que el rectángulo esté encima de otros elementos */
 
   }

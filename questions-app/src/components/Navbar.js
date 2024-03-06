@@ -17,7 +17,7 @@ const Navbar = ({ nombreUsuario }) => {
     >
       <Box>
         <Heading as="h1" size="md" ml={20}>
-          Depre App
+          Quiz App
         </Heading>
       </Box>
       <Spacer />
