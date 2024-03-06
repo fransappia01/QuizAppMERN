@@ -11,7 +11,6 @@ const RecordList = ({ nombreUsuario }) => {
     window.location.reload(); // Recarga la página para empezar de nuevo
   };
 
-
   if (isLoading) {
     return <div>Cargando...</div>;
   }
@@ -20,6 +19,10 @@ const RecordList = ({ nombreUsuario }) => {
     return <div>Ocurrió un error al cargar los registros</div>;
   }
 
+  // Verifica si records es un arreglo antes de iterar sobre él
+  if (!Array.isArray(records)) {
+    return <div>Los registros no son válidos</div>;
+  }
   // Ordena los registros por puntuación de mayor a menor
   const sortedRecords = [...records].sort((a, b) => b.puntuacion - a.puntuacion);
 
