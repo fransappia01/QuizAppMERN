@@ -13,14 +13,26 @@ const getRecords = async () => {
 };
 
 const postRecord = async ({ nombre, puntuacion }) => {
-  const res = await fetch(`https://quizback-three.vercel.app/api/resultado`, {
-    method: 'POST',
-    headers: headers,
-    body: JSON.stringify({ nombre, puntuacion }),
-  });
-  const record = await res.json();
-  console.log(record, "vevoooo");
-  return record;
+  try {
+    const response = await fetch(`https://quizback-three.vercel.app/api/resultado`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ nombre, puntuacion })
+    });
+
+    if (!response.ok) {
+      throw new Error('Error al guardar la puntuación');
+    }
+
+    const data = await response.json();
+    console.log('Puntuación guardada correctamente:', data);
+    return data;
+  } catch (error) {
+    console.error('Error al enviar la puntuación:', error);
+    throw error;
+  }
 };
 
 export {
