@@ -2,28 +2,28 @@ import React, { useState, useEffect } from 'react';
 import { Modal, ModalOverlay, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, Heading } from '@chakra-ui/react';
 import './ResultsModal.css'
 import Answers from './HistoryAnswers';
+import { useMutation } from 'react-query';
 import { postRecord } from '../api/record';
 import RecordList  from './HistoryAnswers';
 
 const ResultsModal = ({ mostrarModal, respuestasCorrectas, onClose, nombreUsuario }) => {
     const [showAnswers, setshowAnswers] = useState(false);
 
+    const { mutate: saveRecord, isSuccess, isError } = useMutation(postRecord);
+
     const handleCerrarModal = () => {
         onClose(); // Cierra el modal
-        setshowAnswers(true); 
+        saveRecord({
+            nombre: nombreUsuario, // Nombre del usuario
+            puntuacion: respuestasCorrectas // Puntuación del usuario
+        });
         
-        try {
-            // Llama a la función postRecord para guardar la puntuación
-            postRecord({
-                nombre: nombreUsuario, // Nombre del usuario 
-                puntuacion: respuestasCorrectas // Puntuación del usuario
-            });
-            console.log('Nombre guardado correctamente', nombreUsuario);
-            console.log('Puntuación guardada correctamente', respuestasCorrectas);
-        } catch (error) {
-            console.error('Error al guardar la puntuación:', error);
-        }
     };
+    useEffect(() => {
+        if (isSuccess) {
+            setshowAnswers(true);
+        }
+    }, [isSuccess]);
     return (
         <>
             {mostrarModal && (
