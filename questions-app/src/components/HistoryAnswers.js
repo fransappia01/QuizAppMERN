@@ -12,7 +12,7 @@ const RecordList = ({ nombreUsuario }) => {
   };
 
   if (isLoading) {
-    return <div>Cargando...</div>;
+    return <div className='loading'>Cargando...</div>;
   }
 
   if (isError) {

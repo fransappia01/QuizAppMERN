@@ -84,3 +84,9 @@
     margin-bottom: 25px;
 }
 
+.loading{
+  color: black;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
